@@ -184,7 +184,7 @@ job "docs" {
   # This will restrict the job to only run on clients with 4 or more cores.
   # Note: you may also declare a resource requirement for CPU for a task.
   constraint {
-    attribute = "${cpu.numcores}"
+    attribute = "${attr.cpu.numcores}"
     operator  = ">="
     value     = "4"
   }
